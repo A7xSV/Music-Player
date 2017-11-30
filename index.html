@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="audio-img">
+            <img alt="Cover Image" class="cover">
+        </div>
+        <div id="audio-player">
+            <div id="audio-info">
+                <span class="artist"></span> - <span class="title"></span>
+            </div>
+            <input id="volume" type="range" min="0" max="10" value="5">
+            <br>
+            <div id="audio-buttons">
+                <button id="prev"></button>
+                <button id="play"></button>
+                <button id="pause"></button>
+                <button id="stop"></button>
+                <button id="next"></button>
+            </div>
+            <div class="clearfix"></div>
+            <div id="tracker">
+                <div id="progress-bar">
+                    <span id="progress"></span>
+                </div>
+                <span id="duration"></span>
+            </div>
+            <div class="clearfix"></div>
+            <ul id="playlist">
+                <li song="A7x - Shepherd Of Fire.mp3" cover="Hail To The King.jpg" artist="Avenged Sevenfold">Shepherd Of Fire.mp3</li>
+                <li song="A7x - Hail To The King.mp3" cover="Hail To The King.jpg" artist="Avenged Sevenfold">Hail To The King</li>
+                <li song="A7x - Doing Time.mp3" cover="Hail To The King.jpg" artist="Avenged Sevenfold">Doing Time.mp3</li>
+                <li song="A7x - This Means War.mp3" cover="Hail To The King.jpg" artist="Avenged Sevenfold">This Means War.mp3</li>
+                <li song="A7x - Crimson Day.mp3" cover="Hail To The King.jpg" artist="Avenged Sevenfold">Crimson Day.mp3</li>
+                <li song="A7x - Heretic.mp3" cover="Hail To The King.jpg" artist="Avenged Sevenfold">Heretic.mp3</li>
+                <li song="A7x - Coming Home.mp3" cover="Hail To The King.jpg" artist="Avenged Sevenfold">Coming Home.mp3</li>
+                <li song="A7x - Planets.mp3" cover="Hail To The King.jpg" artist="Avenged Sevenfold">Planets.mp3</li>
+                <li song="A7x - Acid Rain.mp3" cover="Hail To The King.jpg" artist="Avenged Sevenfold">Acid Rain.mp3</li>
+                <li song="A7x - St.James.mp3" cover="Hail To The King.jpg" artist="Avenged Sevenfold">St.James.mp3</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
