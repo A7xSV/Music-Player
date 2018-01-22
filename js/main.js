@@ -113,3 +113,15 @@ $("#progress-bar").mouseup(function(e){
     var songPercents  = leftOffset / $('#progress-bar').width();
  	audio.currentTime = songPercents * audio.duration;
 });
+
+$('#playlist li').click(function() {
+	audio.pause();
+	if($('#play').is(':visible')) {
+        $('#play').hide();
+        $('#pause').show();
+	}
+	$('#duration').fadeIn(400);
+	initAudio($(this));
+	audio.play();
+	showDuration();
+});
